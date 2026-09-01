@@ -1,0 +1,16 @@
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local credentials and environment configuration
+.env
+*.env
+
+# PostgreSQL backups and local exports
+*.backup
+*.dump
+
+# Python artefacts for future data-generation scripts
+__pycache__/
+.venv/
