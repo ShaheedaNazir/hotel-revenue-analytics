@@ -90,7 +90,10 @@ SELECT
     END
 FROM classified_stays AS s
 JOIN core.guests AS g ON g.guest_reference = 'GST-' || LPAD(
-    (1 + (booking_sequence * 7 % 1200))::TEXT, 6, '0'
+    (CASE WHEN booking_sequence <= 850 THEN booking_sequence
+          ELSE 851 + (booking_sequence % 350) END)::TEXT,
+    6,
+    '0'
 );
 
 WITH events AS (
