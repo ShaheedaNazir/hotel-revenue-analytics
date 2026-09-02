@@ -6,7 +6,14 @@ cancellation, and guest-behaviour insights.
 
 ## Project status
 
-In progress — database foundation and operational data model established.
+Complete — PostgreSQL analytics model, quality checks, business analysis, and Power BI executive dashboard delivered.
+
+## Dashboard
+
+The Power BI report provides an executive view of total room revenue, occupancy,
+ADR, RevPAR, monthly seasonality, and property-level performance.
+
+![Power BI executive dashboard](screenshots/power-bi-executive-dashboard.png)
 
 ## Business questions
 
@@ -24,6 +31,12 @@ core      → validated operational entities and business rules
 analytics → reporting-ready models and KPI views
 audit     → status history and data-quality controls
 ```
+
+## Technology
+
+- PostgreSQL 18 and pgAdmin 4
+- Power BI Desktop
+- SQL, Git, and GitHub
 
 ## Selected findings
 
